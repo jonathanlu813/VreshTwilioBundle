@@ -1,6 +1,9 @@
 parameters:
-    twilio.class: Vresh\TwilioBundle\Service\TwilioWrapper
+    twilio.api_class: Vresh\TwilioBundle\Service\TwilioWrapper
+    twilio.request_validator_class: Vresh\TwilioBundle\Service\TwilioRequestValidatorWrapper
 
 services:
     twilio.api:
-        class: %twilio.class%
+        class: %twilio.api_class%
+    twilio.request_validator:
+        class: %twilio.request_validator_class%
