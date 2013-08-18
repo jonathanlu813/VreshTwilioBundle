@@ -112,7 +112,6 @@ class SMSController extends Controller
 {
     public function receiveSmsMessageAction()
     {
-        $smsManager = $this->get('stampup_sms.sms_manager');
         $url = $this->getRequest()->getUri();
         $postVars = $this->getRequest()->request->all();
         $signature = $this->getRequest()->server->get('HTTP_X_TWILIO_SIGNATURE');
