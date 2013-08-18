@@ -1,14 +1,18 @@
 {
-    "name": "vresh/twilio-bundle",
+    "name": "jonathanlu813/twilio-bundle",
     "type": "symfony-bundle",
     "description": "A simple Symfony2 bundle for the official sdk provided by Twilio.",
     "keywords": ["Twilio"],
-    "homepage": "https://github.com/fridolin-koch/VreshTwilioBundle",
+    "homepage": "https://github.com/jonathanlu813/VreshTwilioBundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Fridolin Koch",
             "email": "info@fridokoch.de"
+        },
+        {
+            "name": "Jonathan Lu",
+            "email": "jonathanlu813@gmail.com"
         }
     ],
     "minimum-stability": "dev",

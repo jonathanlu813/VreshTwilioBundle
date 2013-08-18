@@ -105,6 +105,29 @@ class SomeCommand extends ContainerAwareCommand
 }
 ```
 
+Use a Service_Request_Validator
+
+```php
+class SMSController extends Controller
+{
+    public function receiveSmsMessageAction()
+    {
+        $smsManager = $this->get('stampup_sms.sms_manager');
+        $url = $this->getRequest()->getUri();
+        $postVars = $this->getRequest()->request->all();
+        $signature = $this->getRequest()->server->get('HTTP_X_TWILIO_SIGNATURE');
+
+        $requestValidator = $this->getContainer()->get('twilio.request_validator');
+
+        if (!$requestValidator->validate($signature, $url, $postVars)) {
+            throw $this->createNotFoundException('Request not coming from SMS service');
+        }
+
+        // Do whatever you want with the received message
+    }
+}
+```
+
 Copyright / License
 -------------------
 

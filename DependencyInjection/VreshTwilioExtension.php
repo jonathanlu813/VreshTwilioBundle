@@ -14,6 +14,7 @@ use Symfony\Component\Config\FileLocator;
  * file that was distributed with this source code.
  *
  * @author Fridolin Koch <info@fridokoch.de>
+ * @author Jonathan Lu <jonathanlu813@gmail.com>
  */
 class VreshTwilioExtension extends Extension
 {

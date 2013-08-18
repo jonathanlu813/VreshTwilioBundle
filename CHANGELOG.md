@@ -1,5 +1,9 @@
 #Versions
 
+##0.4
+
+* Exposed Service_Request_Validator to validate incoming request from Twilio for better security
+
 ##0.3
 
 * Removed old SDK files

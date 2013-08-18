@@ -7,7 +7,7 @@ namespace Vresh\TwilioBundle\Service;
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  *
- * @author Fridolin Koch <info@fridokoch.de>
+ * @author Jonathan Lu <jonathanlu813@gmail.com>
  */
 class TwilioRequestValidatorWrapper extends \Services_Twilio_RequestValidator
 {
